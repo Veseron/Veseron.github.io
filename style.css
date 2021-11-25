@@ -9,7 +9,6 @@
     margin-bottom: 20px;
 }
 .search__title {
-    font-family: 'Roboto-condensed-bold';
     font-size: 32px;
     line-height: 42px;
     color: #32404D;
@@ -26,25 +25,30 @@
     border-radius: 5px 0 0 5px;
     padding: 15px 20px;
     flex: 1;
-    font-family: 'Roboto-light';
     font-size: 21px;
     line-height: 30px;
 }
 .search-main__input::placeholder {
-    font-family: 'Roboto-light';
     font-size: 21px;
     line-height: 30px;
     color: #929FAB;
 }
 .search-main__btn {
-    font-family: 'Roboto-light';
     font-weight: normal;
     text-transform: capitalize;
     width: 214px;
     border-radius: 0 5px 5px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF1037;
+    cursor: pointer;
+}
+.search-main__btn:hover {
+    color: #D71131;
 }
 .search__descr {
-    font-family: 'Roboto-light';
     font-size: 15px;
     line-height: 20px;
     color: #929FAB;
