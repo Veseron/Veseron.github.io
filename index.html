@@ -1,0 +1,73 @@
+<div class="b-material-wrapper b-material-wrapper_art">
+    <div class="search">
+        <h3 class="search__title">Проверьте свой товарный знак на&nbsp;уникальность бесплатно</h3>
+        <div class="search-main">
+            <input class="search-main__input js-search-input" placeholder="Введите название для проверки"><a class="btn search-main__btn js-search-btn" data-utm="?utm_source=garant&amp;utm_medium=special&amp;utm_campaign=trademark&amp;utm_content=content&amp;utm_term=onlinesearch">Проверить</a>
+        </div><span class="search__descr">Перейти к онлайн-поиску по базам ФИПС, доменам и названиям ООО</span>
+    </div>
+</div>
+
+<style>
+/* search */
+.search {
+    background: #5C707C;
+    /* border: 1px solid #5C707C; */
+    border-radius: 10px;
+    padding: 50px;
+}
+.search:not(:last-child) {
+    margin-bottom: 20px;
+}
+.search__title {
+    font-size: 32px;
+    line-height: 42px;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+.search-main {
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px rgb(21 36 56 / 15%);
+}
+.search-main__input {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 15px 20px;
+    flex: 1;
+    font-size: 21px;
+    line-height: 30px;
+}
+.search-main__input::placeholder {
+    font-size: 21px;
+    line-height: 30px;
+    color: #eee;
+}
+.search-main__btn {
+    font-weight: normal;
+    text-transform: capitalize;
+    width: 214px;
+    border-radius: 0 5px 5px 0;
+    background-color: #F26922;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    cursor: pointer;
+}
+.search__descr {
+    font-size: 15px;
+    line-height: 20px;
+    color: #929FAB;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    let searchBtn = document.getElementById('js-search-btn');
+    searchBtn.addEventListener('click', () => {
+        let searchValue = document.getElementById('js-search-input').value;
+        window.open(encodeURI('https://legal-support.ru/services/trademarks/online-proverka-tovarnogo-znaka/?search_query=' + searchValue), '_blank');
+    });
+});
+</script>
