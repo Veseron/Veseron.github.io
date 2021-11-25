@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 .search-main__btn:hover {
-    color: #D71131;
+    background-color: #D71131;
 }
 .search__descr {
     font-size: 15px;
